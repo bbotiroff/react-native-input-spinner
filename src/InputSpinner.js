@@ -1310,7 +1310,7 @@ class InputSpinner extends Component {
 				{this._renderLeftButton()}
 
 				{this.props.prepend}
-
+				<View pointerEvents="none">
 				<TextInput
 					ref={(input) => (this.textInput = input)}
 					style={this._getInputTextStyle()}
@@ -1333,7 +1333,7 @@ class InputSpinner extends Component {
 					onSubmitEditing={this.onSubmit.bind(this)}
 					{...this.props.inputProps}
 				/>
-
+				</View>
 				{this.props.children}
 				{this.props.append}
 
